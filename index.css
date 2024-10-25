@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('ungu1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: brightness(0.8); /* Efek gelap pada background */
+}
+
+.form-box {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px; /* Padding untuk konten */
+    background: rgb(250, 247, 247); /* Warna putih lembut */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #7bd2da; /* Warna teks utama */
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 25px 0;
+    width: 90%;
+    max-width: 310px;
+    border-bottom: 2px solid #7bd2da;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #7bd2da;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: -5px;
+    font-size: 0.85em;
+    color: #7bd2da;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #050505;
+}
+
+/* Jika ingin placeholder tidak terlihat, tambahkan */
+.inputbox input::placeholder {
+    color: transparent; /* Menghilangkan placeholder */
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #7bd2da;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    justify-content: center;
+    margin-right: 3px;
+}
+
+.forget label a {
+    color: #7bd2da;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: #7bd2da;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #ffffff; /* Warna teks tombol */
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #6ab7c1; /* Warna berubah saat hover */
+}
+
+.register {
+    font-size: 0.9em;
+    color: #7bd2da;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #7bd2da;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+.success-notification {
+    color: #4CAF50; /* Hijau untuk notifikasi sukses */
+    padding: 10px;
+    text-align: center;
+}
+
+.error-notification {
+    color: #F44336; /* Merah untuk notifikasi error */
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .form-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-box {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Ukuran judul di layar kecil */
+    }
+
+    button {
+        height: 40px; /* Sesuaikan tinggi tombol di layar kecil */
+    }
+}

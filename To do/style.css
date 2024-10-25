@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    background-color: rgb(170, 12, 167);
+}
+
+.navbar{
+    padding-bottom: 0;
+}
+button.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+@media(max-width:767px){
+    .ul-bg{
+        background-color: coral;
+    }
+}
+
+nav .nav-item a:hover{
+    color: rgb(72, 193, 214) !important;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+body {
+    background-image: url('ungu2.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center center;
+}
+
+:root {
+    --light-bg: #f8f9fa; /* Warna latar belakang yang lembut */
+    --border: solid 2px rgb(149, 145, 145); /* Border style */
+    --white: white; /* Warna putih */
+    --black: #343a40; /* Warna hitam */
+}
+
+/* Contact form style */
+.contact.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Memindahkan form ke tengah */
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 2rem;
+    width: 40rem; /* Lebar form bisa disesuaikan */
+    text-align: center;
+}
+
+
+.contact.form h2 {
+    font-size: 2.5rem;
+    font-weight: bold; /* Menambahkan ketebalan font */
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+
+.contact form .box {
+    margin: 1rem 0; /* Margin untuk setiap input */
+    width: 100%; /* Lebar 100% */
+    border: var(--border); /* Border untuk setiap input */
+    background-color: var(--white); /* Warna latar belakang input */
+    padding: 1.2rem 1.4rem; /* Padding di dalam input */
+    font-size: 1.8rem; /* Ukuran font untuk input */
+    color: var(--black); /* Warna teks untuk input */
+    border-radius: .5rem; /* Sudut melengkung pada input */
+}
+
+.contact form textarea {
+    height: 20rem; /* Tinggi textarea */
+    resize: none; /* Menghapus kemampuan untuk mengubah ukuran textarea */
+}
+
+/* Button style */
+.btn-submit {
+    margin-top: 1rem; /* Margin atas tombol */
+    padding: 0.5rem 1rem; /* Padding di dalam tombol */
+    border: none; /* Menghapus border default */
+    background-color: var(--black); /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border-radius: 0.5rem; /* Sudut melengkung pada tombol */
+    cursor: pointer; /* Kursor berubah saat hover */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Warna tombol saat hover */
+}
